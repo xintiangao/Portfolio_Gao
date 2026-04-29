@@ -10,9 +10,9 @@ export const profile = {
   location: 'Gainesville, Florida',
   // orcid: '0000-0000-0000-0000',
   bio: [`
-    I am a PhD candidate at University of Florida, with an interest in understanding student
+    I am a PhD student at University of Florida, with an interest in understanding student
     thinking and improving learning through data-driven insights. My work explores how LLMs,
-    research-backed software, and learning analytics can support teaching and enhance learning.`,
+    research-backed softwares, and learning analytics can support teaching and enhance learning.`,
 
     `I am especially interested in translating research into practical tools that make a real
     difference in classrooms as well as informal settings by revealing students' thinking
@@ -172,7 +172,7 @@ export const skills = {
       label: 'Quantitative & Analytics',
       iconBg: 'var(--clr-teal-bg)',
       iconColor: 'var(--clr-teal)',
-      chips: ['Causal Inference', 'Learning Analytics', 'Educational Data Mining', 'Boolean Retrieval']
+      chips: ['Learning Analytics', 'Educational Data Mining', 'Statistical Analysis']
     }
   ],
   tools: [

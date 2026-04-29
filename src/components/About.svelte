@@ -10,7 +10,7 @@
   <div class="hero-band">
     <div class="flex items-start gap-6">
       <div class="av">
-        <img src="headshot.JPG" alt="Headshot of Xintian Gao" class="av-img" />
+        <img src="/headshot.JPG" alt="Headshot of Xintian Gao" class="av-img" />
       </div>
       <div>
         <h1 class="hname">{profile.name}</h1>
