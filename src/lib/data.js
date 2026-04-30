@@ -239,202 +239,162 @@ export const lxdArtifacts = [
     image: 'https://portfolio-xin.s3.amazonaws.com/photos/detailedOutlineModule2.png',
     link: 'https://docs.google.com/spreadsheets/d/1Y4caeaohhtTolSESeab_KIUH-einM4BhXl_AcFauOPk/edit?usp=sharing',
     tags: ['creation', 'affordances', 'research'],
-    description: `A detailed outline for one of the six modules of the MOOC. Its goal is to guide the
-      advancement of the course and create common ground for the LXD team and the faculty team to
-      embed course resources.`,
-    role: `Used resources such as former syllabi, course-packs, and referenced readings to construct
-      a module outline that fits the flow of the content — considering opportunities for learners to
-      reflect, interact with peers through discussion prompts, and engage with assessments aligned to
-      learning objectives.`,
+    description: `A detailed outline for one of the six modules of the MOOC. Its goal is to guide the advancement of the course and create common ground for the LXD team and the faculty team to embed course resources.`,
+    role: `Used prior syllabi, course packs, and academic readings to construct a structured module outline aligned with learning objectives, incorporating opportunities for reflection, peer interaction, and assessment.`,
     competencies: [
       {
         label: 'Creating Design Resources & Documentation',
-        detail: `Compiling relevant information from reference books and syllabi, I developed a
-          comprehensive guide serving as a resource for both learners and instructors, aiding in the
-          organisation and systematisation of course content.`,
+        detail: `Compiled and structured instructional materials into a comprehensive module guide supporting both learners and instructors.`,
       },
       {
         label: 'Technology Affordances & Constraints',
-        detail: `Incorporating multimedia features supported by Coursera demonstrates proficiency in
-          leveraging platform capabilities — integrating videos, interactive quizzes, and discussion
-          forums to optimise learner engagement and comprehension.`,
+        detail: `Designed content aligned with Coursera’s platform features, including discussions, assessments, and multimedia integration.`,
       },
       {
         label: 'Research & Evaluation Skills',
-        detail: `Selecting appropriate excerpts from reference books and including varied assessment
-          activities aligned to learning objectives, drawing on Backward Design Principles to ensure
-          instructional validity.`,
+        detail: `Applied Backward Design principles to ensure alignment between learning objectives, activities, and assessments.`,
       },
     ],
   },
+
   {
     id: 'mcq',
     title: 'Assessment: Multiple Choice Questions',
     image: 'https://portfolio-xin.s3.amazonaws.com/photos/multipleChoiceQuestions.jpg',
     link: 'https://docs.google.com/document/d/1ROZBr8qAylc3ccPyuH2Y8YdmVLcd7naKDCyzHixxZdI/edit?usp=sharing',
     tags: ['creation', 'theories', 'research'],
-    description: `A summative assessment following a lecture, meticulously designed to assess
-      learners' comprehension of learning objectives. Crafted to ensure questions are accessible
-      and easy to read.`,
-    role: `Curated assessment activities to align with the module's learning objectives and provide
-      examples for the faculty team to develop their own questions.`,
+    description: `A summative assessment designed to evaluate learners’ understanding of key concepts introduced in the module.`,
+    role: `Designed and curated assessment items aligned with learning objectives, ensuring clarity, accessibility, and pedagogical alignment.`,
     competencies: [
       {
         label: 'Applying Learning Theories & Design Frameworks',
-        detail: `Aligned each question with specific learning outcomes, incorporating principles of
-          cognitive and affective taxonomies to prompt learners to engage with and apply their knowledge.`,
+        detail: `Aligned questions with learning objectives using cognitive and affective taxonomies.`,
       },
       {
         label: 'Research & Evaluation Skills',
-        detail: `Each question was carefully constructed to ensure validity and reliability, drawing
-          on evidence-based practices in assessment design and Backward Design Principles.`,
+        detail: `Ensured validity and reliability through evidence-based assessment design practices.`,
       },
       {
         label: 'Creating Design Resources & Documentation',
-        detail: `Generated objectives, templates, and documentation (slides and scripts) to support
-          the development and implementation of assessments within the module.`,
+        detail: `Developed assessment templates and supporting materials for instructor use.`,
       },
     ],
   },
+
   {
     id: 'paraphrase',
     title: 'Reading: Paraphrased Article',
     image: 'https://portfolio-xin.s3.amazonaws.com/photos/paraphraseArticle.jpg',
     link: 'https://docs.google.com/document/d/1ALjcUzDgVcFzPcy6ffGHAYg_RbXayTiwJXrZ0eD6ZRI/edit?usp=sharing',
     tags: ['theories', 'research'],
-    description: `A concise summary derived from a reference chapter, focusing on a specific topic
-      within the objectives of interest. Presents key ideas in condensed form while maintaining
-      clarity and coherence.`,
-    role: `Reviewed the reference chapter and extracted main points to create the paraphrased article,
-      ensuring clear and accessible language while preserving the essence of the original content.`,
+    description: `A concise synthesis of a reference chapter, capturing key ideas in accessible language.`,
+    role: `Summarized and restructured academic content to support learner comprehension while preserving conceptual accuracy.`,
     competencies: [
       {
         label: 'Applying Learning Theories & Design Frameworks',
-        detail: `Applied knowledge of learning theories to distill main concepts into a concise summary,
-          articulating key ideas effectively for the target audience.`,
+        detail: `Translated theoretical concepts into learner-friendly summaries.`,
       },
       {
         label: 'Research & Evaluation Skills',
-        detail: `Critically analysed the reference chapter to identify salient points and arguments,
-          demonstrating proficiency in evaluating and synthesising academic literature.`,
+        detail: `Synthesized academic literature to identify core arguments and ideas.`,
       },
     ],
   },
+
   {
     id: 'discussion',
     title: 'Reading: Discussion Prompt',
     image: 'https://portfolio-xin.s3.amazonaws.com/photos/discussionPrompt.jpg',
     link: 'https://docs.google.com/document/d/10iCD3MtxIGWL1jokVJt9-qnnHzOBERoQLWsd5L40qKk/edit?usp=sharing',
     tags: ['creation', 'affordances', 'research'],
-    description: `A discussion prompt that encourages learners to reflect on perspectives presented
-      in the chosen article regarding the definition and nature of real estate development, while
-      fostering peer interaction.`,
-    role: `Crafted the prompt to stimulate meaningful dialogue and reflection, synthesising key
-      points from the reading and framing questions that cater to the reading objective, emphasising
-      peer interaction.`,
+    description: `A structured discussion prompt designed to encourage reflection and peer interaction.`,
+    role: `Designed prompts that scaffold critical thinking and align with learning objectives.`,
     competencies: [
       {
         label: 'Creating Design Resources & Documentation',
-        detail: `Crafted thought-provoking questions with clear instructions, creating a structured
-          framework for facilitating discussion within the module.`,
+        detail: `Developed structured discussion prompts to support learner engagement.`,
       },
       {
         label: 'Technology Affordances & Constraints',
-        detail: `Ensured the discussion prompt is compatible with the digital learning platform,
-          leveraging discussion forums and considering accessibility constraints.`,
+        detail: `Designed prompts optimized for online discussion forums.`,
       },
       {
         label: 'Research & Evaluation Skills',
-        detail: `Drawing on Miles et al. (2015), designed questions that encourage critical analysis
-          and formative self-assessment through peer review.`,
+        detail: `Encouraged analytical reasoning through evidence-based questioning strategies.`,
       },
     ],
   },
+
   {
     id: 'slides',
     title: 'Lecture: Slides',
     embed: 'https://docs.google.com/presentation/d/e/2PACX-1vR4ZfOINVAewTjBqA5aXXEdVnvcDRh6FMQJwXaxxbZSccmDYBl5NxR_C0h5YfpJg_1tgGqcs0VC0pjn/embed?start=false&loop=false&delayms=3000',
     link: 'https://docs.google.com/presentation/d/1Rot9Q8D1A3P2d6pCujl32b0TO7Rxf1DydUw6b7eGt6c/edit?usp=sharing',
     tags: ['creation', 'inclusive', 'research'],
-    description: `A slideshow presentation for a lecture corresponding with learning objectives.
-      Visually illustrates key concepts and definitions to complement video recordings and enhance
-      learner engagement.`,
-    role: `Designed the slideshow in alignment with lecture content, selecting appropriate visual
-      elements to convey abstract concepts, with clear logical structure and headings.`,
+    description: `A slide deck designed to support lecture delivery and reinforce key conceptual content.`,
+    role: `Designed instructional slides aligned with lecture content, emphasizing clarity, structure, and accessibility.`,
     competencies: [
       {
         label: 'Creating Design Resources & Documentation',
-        detail: `Synthesised lecture content into visually engaging slides, providing learners with a
-          resource that complements recordings and supports comprehension of key concepts.`,
+        detail: `Developed visually structured slides to support learner comprehension.`,
       },
       {
         label: 'Integrating Inclusive Design Principles',
-        detail: `Prioritised colour-contrasting, content alignment, and strategic use of text
-          decorations (italics, bold) to ensure accessibility across diverse learner audiences.`,
+        detail: `Applied accessibility principles including contrast, hierarchy, and readability.`,
       },
       {
         label: 'Research & Evaluation Skills',
-        detail: `Drew on principles of visual accessibility and cognitive load theory, and solicited
-          iterative feedback from LXD mentors to improve the design.`,
+        detail: `Iteratively refined design based on feedback and cognitive load principles.`,
       },
     ],
   },
+
   {
     id: 'eight-stages',
     title: 'Material: Eight-Stages Image',
-    embed: 'https://drive.google.com/file/d/1anN8diBfC3_7TImop0xqSfjBxLRJwSZ_/preview',
+    embed: null,
+    image: 'https://portfolio-xin.s3.amazonaws.com/photos/eightStages.jpg',
     link: 'https://drive.google.com/file/d/1anN8diBfC3_7TImop0xqSfjBxLRJwSZ_/view?usp=sharing',
     tags: ['creation', 'inclusive', 'relationships', 'research'],
-    description: `An image depicting the Eight-Stage Model of Real Estate Development, illustrating
-      the sequential (and iterative) process from initial ideation to property management. Serves as
-      a visual aid for understanding the non-linear nature of real estate development.`,
-    role: `Designed the image based on readings and the original visual representation, incorporating
-      accessibility principles and collaborating with LXD and the accessibility team to revise tags
-      for voice-over learners.`,
+    description: `A visual representation of the Eight-Stage Model of Real Estate Development.`,
+    role: `Designed a conceptual diagram with accessibility considerations in collaboration with instructional and accessibility teams.`,
     competencies: [
       {
         label: 'Creating Design Resources & Documentation',
-        detail: `Designed a visual aid based on readings and existing representations, serving as a
-          valuable resource to enhance learner comprehension of development stages.`,
+        detail: `Produced a visual learning aid to clarify complex process models.`,
       },
       {
         label: 'Integrating Inclusive Design Principles',
-        detail: `Incorporated accessibility principles to ensure the image is accessible to all
-          learners, including those requiring voice-over assistance.`,
+        detail: `Ensured accessibility through structured labeling and visual clarity.`,
       },
       {
         label: 'Fostering Workplace Skills & Professional Relationships',
-        detail: `Collaborated with the LXD and accessibility teams to solicit feedback and revise
-          tags for learners requiring alternative formats — exemplifying effective stakeholder collaboration.`,
+        detail: `Collaborated with cross-functional teams for iterative design refinement.`,
       },
     ],
   },
+
   {
     id: 'listing',
     title: 'Material: Real Estate Listing',
-    embed: 'https://drive.google.com/file/d/1qApOhb63T2-Sn5bIHIYc-S_d3TYlVj0S/preview',
-    link: 'https://drive.google.com/file/d/1anN8diBfC3_7TImop0xqSfjBxLRJwSZ_/view?usp=sharing',
+    embed: null,
+    image: 'https://portfolio-xin.s3.amazonaws.com/photos/realEstateListing.jpg',
+    link: 'https://drive.google.com/file/d/1qApOhb63T2-Sn5bIHIYc-S_d3TYlVj0S/view?usp=sharing',
     tags: ['creation', 'inclusive', 'affordances', 'research'],
-    description: `A real estate listing template designed to familiarise students with typical
-      features and components of real estate listings, including property details, description,
-      images, and contact information.`,
-    role: `Designed the template in Adobe Illustrator, creating an effective layout, selecting
-      appropriate fonts and colours for readability, and incorporating copyright-compliant graphics.`,
+    description: `A templated real estate listing used to teach learners how to interpret property information.`,
+    role: `Designed a structured visual template using Adobe Illustrator with attention to readability and layout clarity.`,
     competencies: [
       {
         label: 'Creating Design Resources & Documentation',
-        detail: `Designed a visually appealing and informative template, providing students with a
-          resource to practice analysing and interpreting real estate listings.`,
+        detail: `Developed a structured template for applied learner analysis.`,
       },
       {
         label: 'Integrating Inclusive Design Principles',
-        detail: `Ensured the template is accessible to all students using clear, legible fonts and
-          a logical, intuitive information hierarchy.`,
+        detail: `Applied readability and hierarchy principles for accessibility.`,
       },
       {
         label: 'Technology Affordances & Constraints',
-        detail: `Leveraged Adobe Illustrator's features — shapes, text boxes, and styles — to
-          effectively communicate property information within the template.`,
+        detail: `Leveraged Adobe Illustrator tools to structure visual communication.`,
       },
     ],
   },
