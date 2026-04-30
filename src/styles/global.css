@@ -376,9 +376,9 @@ ol {
 
 .flex.gap-1 {
   display: flex;
-  gap: 0.25rem; 
-  flex-wrap: wrap; 
-  justify-content: flex-end; 
+  gap: 0.25rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 /* ------------------------------------------------------------
@@ -906,4 +906,426 @@ iframe {
     flex-direction: column;
     gap: var(--sp-4);
   }
+}
+
+/* ------------------------------------------------------------
+   22. LXD — Hero band
+   ------------------------------------------------------------ */
+.lxd-hero {
+  position: relative;
+  background: var(--clr-accent-2);
+  border: 0.5px solid var(--clr-accent-3);
+  border-radius: var(--radius-xl);
+  padding: var(--sp-8);
+  margin-bottom: var(--sp-6);
+  overflow: hidden;
+}
+.lxd-hero-accent {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--clr-accent) 12%, transparent);
+  pointer-events: none;
+}
+.lxd-hero-inner {
+  display: flex;
+  gap: var(--sp-6);
+  align-items: flex-start;
+  flex-wrap: wrap;
+  position: relative;
+}
+.lxd-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-md);
+  background: var(--clr-accent);
+  color: var(--clr-paper);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.05em;
+  flex-shrink: 0;
+}
+.lxd-title {
+  font-family: var(--font-display);
+  font-size: var(--fs-2xl);
+  line-height: var(--lh-tight);
+  margin-bottom: var(--sp-1);
+  color: var(--clr-accent);
+}
+.lxd-sub {
+  font-size: var(--fs-sm);
+  color: var(--clr-ink-3);
+  margin-bottom: var(--sp-3);
+}
+.lxd-body {
+  font-size: var(--fs-base);
+  color: var(--clr-ink-2);
+  line-height: var(--lh-loose);
+}
+
+/* ------------------------------------------------------------
+   24. LXD — Filter bar
+   ------------------------------------------------------------ */
+.lxd-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  margin-bottom: var(--sp-6);
+}
+.lxd-filter-btn {
+  font-size: var(--fs-s);
+  font-weight: var(--fw-medium);
+  padding: 5px 13px;
+  border-radius: var(--radius-full);
+  border: 0.5px solid var(--clr-border-2);
+  background: transparent;
+  color: var(--clr-ink-2);
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition:
+    background var(--t-fast) var(--ease-out),
+    color var(--t-fast) var(--ease-out),
+    border-color var(--t-fast) var(--ease-out);
+}
+.lxd-filter-btn:hover {
+  background: var(--clr-paper-2);
+  color: var(--clr-ink);
+}
+.lxd-filter-btn.active {
+  background: var(--clr-accent-2);
+  color: var(--clr-accent);
+  border-color: var(--clr-accent-3);
+}
+
+/* ------------------------------------------------------------
+   25. LXD — Artifact grid
+   ------------------------------------------------------------ */
+.lxd-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--sp-5);
+}
+.lxd-artifact {
+  border: 0.5px solid var(--clr-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--clr-paper);
+  transition: box-shadow var(--t-base) var(--ease-out);
+}
+.lxd-artifact:hover {
+  box-shadow: var(--shadow-md);
+}
+
+/* Media thumbnail */
+.lxd-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--clr-paper-3);
+}
+.lxd-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--t-slow) var(--ease-out);
+}
+.lxd-artifact:hover .lxd-media img {
+  transform: scale(1.04);
+}
+.lxd-media iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.lxd-link-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-full);
+  background: var(--clr-paper);
+  color: var(--clr-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+  opacity: 0;
+  transition: opacity var(--t-fast);
+}
+.lxd-artifact:hover .lxd-link-badge {
+  opacity: 1;
+}
+
+/* Artifact card body */
+.lxd-artifact-body {
+  padding: var(--sp-4);
+}
+.lxd-expand-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--sp-2);
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: var(--font-body);
+  text-align: left;
+}
+.lxd-artifact-title {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-medium);
+  color: var(--clr-ink);
+  line-height: var(--lh-snug);
+}
+.lxd-chevron {
+  color: var(--clr-ink-3);
+  flex-shrink: 0;
+  transition: transform var(--t-base) var(--ease-out);
+}
+.lxd-chevron.open {
+  transform: rotate(180deg);
+}
+.lxd-tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-1);
+  margin-top: var(--sp-2);
+}
+
+/* ------------------------------------------------------------
+   26. LXD — Expanded detail panel & competency cards
+   ------------------------------------------------------------ */
+.lxd-detail {
+  border-top: 0.5px solid var(--clr-border);
+  margin-top: var(--sp-4);
+  padding-top: var(--sp-4);
+  animation: fadeUp var(--t-base) var(--ease-out) both;
+}
+.lxd-comp {
+  background: var(--clr-paper-2);
+  border-radius: var(--radius-md);
+  padding: var(--sp-3) var(--sp-4);
+  margin-top: var(--sp-2);
+  margin-bottom: var(--sp-2);
+}
+.lxd-comp-label {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--clr-accent);
+  margin-bottom: var(--sp-1);
+}
+.lxd-comp-text {
+  font-size: var(--fs-sm);
+  color: var(--clr-ink-2);
+  line-height: var(--lh-base);
+}
+
+/* ------------------------------------------------------------
+   28. LXD — Responsive overrides
+   ------------------------------------------------------------ */
+@media (max-width: 600px) {
+  .lxd-grid {
+    grid-template-columns: 1fr;
+  }
+  .lxd-filters {
+    gap: var(--sp-1);
+  }
+  .lxd-filter-btn {
+    font-size: 11px;
+    padding: 4px 10px;
+  }
+  .lxd-hero {
+    padding: var(--sp-5);
+  }
+  .lxd-hero-inner {
+    flex-direction: column;
+  }
+}
+
+/* ------------------------------------------------------------
+   28. LXD — Modules
+   ------------------------------------------------------------ */
+.lxd-modules {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+.lxd-module-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-3);
+  padding: var(--sp-2) var(--sp-3);
+  background: var(--clr-paper-2);
+  border-radius: var(--radius-sm);
+}
+.lxd-module-n {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  color: var(--clr-accent);
+  background: var(--clr-accent-2);
+  border-radius: var(--radius-sm);
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.lxd-module-title {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  color: var(--clr-ink);
+  line-height: var(--lh-snug);
+}
+.lxd-module-desc {
+  font-size: var(--fs-xs);
+  color: var(--clr-ink-3);
+  margin-top: 2px;
+  line-height: var(--lh-snug);
+}
+/* ── Tabs ── */
+.lxd-tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 0.5px solid var(--clr-border);
+  margin-bottom: 0;
+}
+.lxd-tab {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  font-family: var(--font-body);
+  padding: var(--sp-3) var(--sp-5);
+  border: none;
+  background: transparent;
+  color: var(--clr-ink-3);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -0.5px;
+  transition:
+    color var(--t-fast) var(--ease-out),
+    border-color var(--t-fast) var(--ease-out);
+}
+.lxd-tab:hover {
+  color: var(--clr-ink);
+}
+.lxd-tab-active {
+  color: var(--clr-accent);
+  border-bottom-color: var(--clr-accent);
+}
+
+/* ── Course card shell ── */
+.lxd-course-card {
+  border: 0.5px solid var(--clr-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--clr-paper);
+  transition: box-shadow var(--t-base) var(--ease-out);
+}
+.lxd-course-card:hover {
+  box-shadow: var(--shadow-sm);
+}
+
+/* ── Course header button ── */
+.lxd-course-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-4);
+  padding: var(--sp-5);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-body);
+  text-align: left;
+}
+.lxd-course-header-left {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-4);
+  flex: 1;
+  min-width: 0;
+}
+.lxd-course-thumb {
+  width: 72px;
+  height: 52px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 0.5px solid var(--clr-border);
+}
+.lxd-course-thumb-placeholder {
+  background: var(--clr-accent-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lxd-course-meta {
+  flex: 1;
+  min-width: 0;
+}
+.lxd-course-title {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-medium);
+  color: var(--clr-ink);
+  line-height: var(--lh-snug);
+  margin-bottom: var(--sp-1);
+}
+.lxd-course-sub {
+  font-size: var(--fs-sm);
+  color: var(--clr-ink-3);
+}
+
+/* ── Expanded detail panel ── */
+.lxd-course-detail {
+  border-top: 0.5px solid var(--clr-border);
+  padding: var(--sp-5) var(--sp-5) var(--sp-6);
+  animation: fadeUp var(--t-base) var(--ease-out) both;
+}
+.lxd-course-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-8);
+}
+
+/* ── Responsibilities ── */
+.lxd-resp-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.lxd-resp-item {
+  display: flex;
+  gap: var(--sp-3);
+  align-items: flex-start;
+}
+.lxd-resp-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--clr-accent);
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+.lxd-resp-text {
+  font-size: var(--fs-sm);
+  color: var(--clr-ink-2);
+  line-height: var(--lh-base);
 }

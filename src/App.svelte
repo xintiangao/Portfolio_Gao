@@ -6,6 +6,7 @@
   import Skills from "./components/Skills.svelte";
   import Interests from "./components/Interests.svelte";
   import Contact from "./components/Contact.svelte";
+  import LXD from "./components/LXD.svelte";
 
   import {
     profile,
@@ -24,6 +25,7 @@
     { id: "research", label: "Research" },
     // { id: "publications", label: "Publications" },
     { id: "teaching", label: "Teaching" },
+    { id: "LXD", label: "LXD" },
     { id: "skills", label: "CV" },
     // { id: "interests", label: "Interests" },
     { id: "contact", label: "Contact" },
@@ -64,6 +66,8 @@
       <Publications {publications} />
     {:else if active === "teaching"}
       <Teaching {teaching} />
+    {:else if active === "LXD"}
+      <LXD />
     {:else if active === "skills"}
       <Skills {skills} />
     {:else if active === "interests"}
