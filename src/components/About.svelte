@@ -21,7 +21,7 @@
           {/each}
         </div>
         <div class="flex gap-2 flex-wrap mt-4">
-          <a class="btn" href="mailto:gaoxintian@ufl.edu">Get in touch →</a>
+          <a class="btn" href="http://linkedin.com/in/xintian-gao-edtech">Get in touch →</a>
         </div>
       </div>
     </div>
@@ -44,7 +44,10 @@
   </div> -->
 
   <!-- Bio -->
-  <p class="sec-lbl">About me</p>
-  <p class="prose">{profile.bio}</p>
+<p class="sec-lbl">About me</p>
+
+{#each profile.bio as paragraph}
+  <p class="prose mb-4">{paragraph}</p>
+{/each}
 
 </section>

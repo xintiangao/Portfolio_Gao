@@ -21,10 +21,10 @@ export const profile = {
     and worked as a learning experience designer.`],
   tags: [
     'Technology-enhanced learning',
-    'Digital pedagogy',
     'Learning analytics',
-    'EdTech',
-    'Artificial Intelligence'
+    'Artificial Intelligence',
+    'Embodied Cognition',
+    'Perceptual Cues'
   ],
 };
 
