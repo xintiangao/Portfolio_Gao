@@ -188,13 +188,13 @@ export const skills = {
       title: 'Marsal Family School of Education Excellence Award',
       meta: '2023 – 2024 · University of Michigan',
       badge: { label: '$39,000', cls: 'bdg-teal' },
-      desc: 'Full-tuition merit award recognizing excellence in educational studies and design technology.'
+      // desc: 'Full-tuition merit award recognizing excellence in educational studies and design technology.'
     },
     {
       title: 'School of Teaching and Learning Travel Award',
       meta: '2026 · University of Florida',
-      badge: { label: 'Awarded', cls: 'bdg-accent' },
-      desc: 'Support for presenting research on Generative AI scaffolding at National AI Literacy Day.'
+      badge: { label: '$300', cls: 'bdg-accent' },
+      // desc: 'Support for presenting research on Generative AI scaffolding at National AI Literacy Day.'
     }
   ]
 };

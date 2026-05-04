@@ -87,7 +87,7 @@
           <span class="bdg {award.badge.cls}">{award.badge.label}</span>
         {/if}
       </div>
-      <p>{award.desc}</p>
+      <!-- <p>{award.desc}</p> -->
     </div>
   {/each}
 </section>
